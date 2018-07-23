@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Testes {
 
-    static List nomes = new ArrayList();
+    static List<String> nomes = new ArrayList<String>();
 
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
@@ -18,7 +18,7 @@ public class Testes {
 //        System.out.println(nomes.size());
 //        System.out.println(nomes.get(1));
         
-        for(Object obj : nomes) {
+        for(String obj : nomes) {
             System.out.println(obj);
         }
     }
