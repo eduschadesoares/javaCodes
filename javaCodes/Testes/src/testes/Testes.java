@@ -13,6 +13,10 @@ public class Testes {
             leNome();
         }
         
+        
+        
+//        System.out.println(nomes.size());
+        
         for(Object obj : nomes) {
             System.out.println(obj);
         }
