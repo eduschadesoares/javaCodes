@@ -36,4 +36,9 @@ public class Estudante {
         this.RA = RA;
     }
 
+    @Override
+    public String toString() {
+        return "Estudante{" + "nome=" + nome + ", email=" + email + ", RA=" + RA + '}';
+    }
+
 }

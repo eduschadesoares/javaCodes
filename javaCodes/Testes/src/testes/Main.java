@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    static List<String> nomes = new ArrayList<String>();
+    static List<Estudante> nomes = new ArrayList<Estudante>();
 
     public static void main(String[] args) {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             leNome();
         }
         
@@ -18,17 +18,25 @@ public class Main {
 //        System.out.println(nomes.size());
 //        System.out.println(nomes.get(1));
         
-        for(String obj : nomes) {
-            System.out.println(obj);
+        for(Estudante obj : nomes) {
+            System.out.println(obj.getNome() + obj.getRA() + obj.getEmail());
         }
     }
 
     static void leNome() {
-        String nome;
-        System.out.printf("Insira um nome: ");
+        String nome, email;
+        int RA;
         Scanner ler = new Scanner(System.in);
+        System.out.printf("Insira o nome: ");
         nome = ler.nextLine();
-        nomes.add(nome);
+        System.out.printf("Insira o RA: ");
+        RA = Integer.parseInt(ler.nextLine());
+        System.out.printf("Insira o email: ");
+        email = ler.nextLine();
+        
+        Estudante estudante = new Estudante(nome, email, RA);
+        
+        nomes.add(estudante);
 
     }
 }
