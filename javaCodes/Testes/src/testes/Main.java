@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Testes {
+public class Main {
 
     static List<String> nomes = new ArrayList<String>();
 
