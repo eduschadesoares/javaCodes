@@ -1,4 +1,4 @@
-package testes;
+package testes1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class Main {
 //        System.out.println(nomes.get(1));
         
         for(Estudante obj : nomes) {
-            System.out.println(obj.getNome() + obj.getRA() + obj.getEmail());
+            System.out.println(obj);
         }
     }
 

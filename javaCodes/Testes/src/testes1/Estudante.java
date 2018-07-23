@@ -1,4 +1,4 @@
-package testes;
+package testes1;
 
 public class Estudante {
 
@@ -38,7 +38,9 @@ public class Estudante {
 
     @Override
     public String toString() {
-        return "Estudante{" + "nome=" + nome + ", email=" + email + ", RA=" + RA + '}';
+        return "Estudante: " + "nome=" + nome + ", email=" + email + ", RA=" + RA + '\n';
     }
+    
+    
 
 }
