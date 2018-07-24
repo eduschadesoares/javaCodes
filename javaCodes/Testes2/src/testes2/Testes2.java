@@ -11,7 +11,10 @@ public class Testes2 {
         int b;
         
         b = Integer.parseInt(a);
-        System.out.println(b);
+        
+        a = Integer.toString(b);
+       
+        System.out.println(a.getClass().getName());
         
     }
 
