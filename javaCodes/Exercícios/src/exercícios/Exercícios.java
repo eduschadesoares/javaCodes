@@ -9,6 +9,8 @@ public class Exercícios {
         quatro();
         cinco();
         seis();
+        sete();
+        oito();
     }
 
     static void um() {
@@ -61,4 +63,28 @@ public class Exercícios {
         System.out.println("");
     }
 
+    static void sete() {
+        System.out.print("7 - ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("");
+    }
+
+    static void oito() {
+        System.out.print("8 - ");
+        int i = 0, counter = 0;
+        while (true) {
+            if (counter == 100) {
+                break;
+            } else if (i % 2 != 0) {
+                System.out.print(i + " ");
+                counter += 1;
+            }
+            i += 1;
+        }
+        System.out.println("");
+    }
 }
