@@ -15,7 +15,8 @@ public class Exercícios {
         oito();
         nove();
         dez();
-        onze();
+//        onze();
+        quarentaEUm();
     }
 
     static void um() {
@@ -118,5 +119,9 @@ public class Exercícios {
             float n = num.nextFloat();
             System.out.println("Res: " + (n / 2));
         }
+    }
+
+    static void quarentaEUm() {
+
     }
 }
