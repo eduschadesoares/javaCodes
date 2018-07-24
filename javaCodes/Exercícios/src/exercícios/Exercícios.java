@@ -1,5 +1,7 @@
 package exercícios;
 
+import java.util.Scanner;
+
 public class Exercícios {
 
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class Exercícios {
         seis();
         sete();
         oito();
+        nove();
+        dez();
+        onze();
     }
 
     static void um() {
@@ -86,5 +91,32 @@ public class Exercícios {
             i += 1;
         }
         System.out.println("");
+    }
+
+    static void nove() {
+        System.out.print("9 - ");
+        for (int i = 1; i <= 20; i++) {
+            System.out.print(i * i + " ");
+        }
+        System.out.println("");
+    }
+
+    static void dez() {
+        System.out.print("10 - ");
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println("");
+    }
+
+    static void onze() {
+        Scanner num = new Scanner(System.in);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Num: ");
+            float n = num.nextFloat();
+            System.out.println("Res: " + (n / 2));
+        }
     }
 }
